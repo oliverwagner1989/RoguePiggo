@@ -42,6 +42,8 @@ using System.Collections;
 
             //Sets this to not be destroyed when reloading scene
             DontDestroyOnLoad(gameObject);
+            
+            GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().playMusic();
 
             //Assign enemies to a new List of Enemy objects.
             enemies = new List<Enemy>();
